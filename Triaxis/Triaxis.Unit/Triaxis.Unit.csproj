@@ -18,4 +18,9 @@
     <Using Include="Xunit" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Triaxis.Domain\Triaxis.Domain.csproj" />
+    <ProjectReference Include="..\Triaxis.Application\Triaxis.Application.csproj" />
+  </ItemGroup>
+
 </Project>
