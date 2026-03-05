@@ -7,6 +7,7 @@ using Triaxis.Application.Common.Interfaces;
 using Triaxis.Infrastructure.Identity;
 using Triaxis.Infrastructure.Persistence;
 using Triaxis.Infrastructure.Persistence.Interceptors;
+using Triaxis.Infrastructure.Persistence.Seeding;
 
 namespace Triaxis.Infrastructure;
 
@@ -42,6 +43,10 @@ public static class DependencyInjection
 
         services.AddHttpContextAccessor();
         services.AddScoped<ICurrentUser, CurrentUserService>();
+        services.AddScoped<IJwtTokenService, JwtTokenService>();
+        services.AddScoped<IIdentityService, IdentityService>();
+
+        services.AddHostedService<DefaultVisitDefinitionSeeder>();
 
 #pragma warning disable CS0618
         services.AddHybridCache(options =>
