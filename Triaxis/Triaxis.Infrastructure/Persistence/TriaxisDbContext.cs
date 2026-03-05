@@ -19,6 +19,10 @@ public class TriaxisDbContext : IdentityDbContext<ApplicationUser, ApplicationRo
     }
 
     public DbSet<AuditLog> AuditLogs => Set<AuditLog>();
+    public DbSet<Client> Clients => Set<Client>();
+    public DbSet<Study> Studies => Set<Study>();
+    public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
+    public DbSet<VisitDefinition> VisitDefinitions => Set<VisitDefinition>();
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
