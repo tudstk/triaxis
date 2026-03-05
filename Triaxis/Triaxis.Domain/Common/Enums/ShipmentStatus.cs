@@ -3,7 +3,6 @@ namespace Triaxis.Domain.Common.Enums;
 public enum ShipmentStatus
 {
     Created,
-    Shipped,
+    Sent,
     Received,
-    Discrepancy
 }

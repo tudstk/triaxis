@@ -2,12 +2,14 @@ namespace Triaxis.Domain.Common.Enums;
 
 public enum VisitType
 {
+    Prescreening,
     Screening,
     Rescreening,
-    Baseline,
-    Treatment,
-    FollowUp,
+    Enrollment,
+    ScheduledVisit,
+    UnscheduledVisit,
     EarlyTermination,
-    Unscheduled,
-    EndOfStudy
+    Completion,
+    DrugReplacement,
+    DrugSafetyUnblinding,
 }

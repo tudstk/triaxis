@@ -5,5 +5,5 @@ public enum StudyStatus
     Draft,
     Active,
     Completed,
-    Locked
+    Decommissioned
 }
