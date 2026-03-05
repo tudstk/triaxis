@@ -1,0 +1,6 @@
+@Triaxis.API_HostAddress = http://localhost:5159
+
+GET {{Triaxis.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
